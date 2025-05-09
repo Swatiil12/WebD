@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fbd1e9;
+            border: 2px solid #0a0a0a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: #000000;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 8px 0 4px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #030507;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #0b0b0c;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #020303;
+        }
+        .output {
+            background-color: #dff0d8;
+            border: 2px solid #3c763d;
+            color: #3c763d;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>College Admission Form</h2>
+    <form id="admissionForm">
+        <label>Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label>Gender:</label>
+        <select id="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Contact Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label>Select Course:</label>
+        <select id="course" required>
+            <option value="" disabled selected>Select your course</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="B.Com">B.Com</option>
+            <option value="MBA">MBA</option>
+        </select>
+
+        <label>Percentage in 12th Grade:</label>
+        <input type="number" id="marks" required>
+
+        <label>Permanent Address:</label>
+        <textarea id="address" rows="3" required></textarea>
+
+        <button type="button" class="btn" onclick="displayInfo()">Submit Application</button>
+    </form>
+
+    <div class="output" id="outputBox">
+        <h3>Submitted Information</h3>
+        <p id="output"></p>
+    </div>
+</div>
+
+<script>
+    function displayInfo() {
+        const name = document.getElementById("name").value;
+        const dob = document.getElementById("dob").value;
+        const gender = document.getElementById("gender").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const course = document.getElementById("course").value;
+        const marks = document.getElementById("marks").value;
+        const address = document.getElementById("address").value;
+
+        if (name && dob && gender && email && phone && course && marks && address) {
+            const outputBox = document.getElementById("outputBox");
+            const output = document.getElementById("output");
+
+            output.innerHTML = `
+                <strong>Name:</strong> ${name}<br>
+                <strong>Date of Birth:</strong> ${dob}<br>
+                <strong>Gender:</strong> ${gender}<br>
+                <strong>Email:</strong> ${email}<br>
+                <strong>Phone:</strong> ${phone}<br>
+                <strong>Course:</strong> ${course}<br>
+                <strong>12th Grade %:</strong> ${marks}<br>
+                <strong>Address:</strong> ${address}
+            `;
+
+            outputBox.style.display = "block";
+        } else {
+            alert("Please fill out all fields before submitting.");
+        }
+    }
+</script>
+
+</body>
+</html>

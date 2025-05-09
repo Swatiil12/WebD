@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="studentxsl.xsl"?>
+
+<school>
+    <student>
+        <name>Alice Johnson</name>
+        <grade>A</grade>
+        <subject>Mathematics</subject>
+    </student>
+    <student>
+        <name>Bob Smith</name>
+        <grade>B+</grade>
+        <subject>Science</subject>
+    </student>
+    <student>
+        <name>Charlie Lee</name>
+        <grade>A-</grade>
+        <subject>English</subject>
+    </student>
+</school>

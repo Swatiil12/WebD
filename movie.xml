@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="cssmovie.css"?>
+
+<movies>
+    <movie>
+        <title>Inception</title>
+        <director>Christopher Nolan</director>
+        <genre>Science Fiction</genre>
+        <year>2010</year>
+    </movie>
+    <movie>
+        <title>The Shawshank Redemption</title>
+        <director>Frank Darabont</director>
+        <genre>Drama</genre>
+        <year>1994</year>
+    </movie>
+    <movie>
+        <title>The Godfather</title>
+        <director>Francis Ford Coppola</director>
+        <genre>Crime</genre>
+        <year>1972</year>
+    </movie>
+</movies>

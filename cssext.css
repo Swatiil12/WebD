@@ -1,0 +1,82 @@
+/* Resetting margin and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0044cc;
+    border-radius: 5px;
+}
+
+/* Section content styling */
+section.content {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.content h2 {
+    font-size: 36px;
+    color: #0044cc;
+}
+
+section.content p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

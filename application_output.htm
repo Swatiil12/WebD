@@ -1,0 +1,72 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Student Applications</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding: 30px;
+          }
+          h1 {
+            color: #333;
+          }
+          table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+          }
+          th, td {
+            border: 1px solid #bbb;
+            padding: 10px;
+            text-align: left;
+          }
+          th {
+            background-color: #4CAF50;
+            color: white;
+          }
+          tr:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+          .accepted {
+            background-color: #d4edda;
+            color: green;
+          }
+          .rejected {
+            background-color: #f8d7da;
+            color: red;
+          }
+        </style>
+  </head>
+  <body>
+    <h1>Student Applications Status</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>Status</th>
+      </tr>
+      <tr class="accepted">
+        <td>John Doe</td>
+        <td>A</td>
+        <td>Accepted</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>B+</td>
+        <td>Pending</td>
+      </tr>
+      <tr class="rejected">
+        <td>Tom Brown</td>
+        <td>C</td>
+        <td>Rejected</td>
+      </tr>
+      <tr class="accepted">
+        <td>Lucy White</td>
+        <td>A+</td>
+        <td>Accepted</td>
+      </tr>
+    </table>
+  </body>
+</html>

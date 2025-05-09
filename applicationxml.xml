@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+
+<applications>
+    <student>
+        <name>John Doe</name>
+        <grade>A</grade>
+        <status>Pending</status>
+    </student>
+    <student>
+        <name>Jane Smith</name>
+        <grade>B+</grade>
+        <status>Pending</status>
+    </student>
+    <student>
+        <name>Tom Brown</name>
+        <grade>C</grade>
+        <status>Pending</status>
+    </student>
+    <student>
+        <name>Lucy White</name>
+        <grade>A+</grade>
+        <status>Pending</status>
+    </student>
+</applications>

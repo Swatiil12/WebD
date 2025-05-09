@@ -1,0 +1,44 @@
+/* Root element styling */
+movies {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+/* Movie block styling */
+movie {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #0077b6;
+}
+
+/* Title styling */
+title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #023e8a;
+    margin-bottom: 8px;
+}
+
+/* Director styling */
+director {
+    display: block;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Genre and year styling */
+genre, year {
+    display: inline-block;
+    background-color: #e0f7fa;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
